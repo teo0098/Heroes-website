@@ -1,0 +1,17 @@
+@import '../../../_colors';
+
+.Login {
+    color: $color2;
+    background: $color1;
+    text-decoration: none;
+    padding: 2vh;
+    border-radius: 0.2vh;
+    margin-left: auto;
+    margin-right: 4vw;
+    font-size: 1.1vw;
+    transition: color 0.2s ease-out;
+}
+
+.Login:hover {
+    color: $color3;
+}

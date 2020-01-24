@@ -1,0 +1,28 @@
+@import '../../../_colors';
+
+.Nav {
+    height: 100%;
+}
+
+.Nav__ul {
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.Nav__Link {
+    font-size: 1.3vw;
+    color: $color3;
+    text-decoration: none;
+    margin: 0 1vw;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1vw;
+}
+
+.Nav__span {
+    font-weight: bold;
+    margin: 0 0.3vw;
+}

@@ -1,0 +1,20 @@
+@import '../../../_colors';
+
+.Logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 2vh;
+}
+
+.Logo__i {
+    font-size: 2.5vw;
+    color: $color1;
+}
+
+.Logo__h2 {
+    font-size: 2vw;
+    margin: 0 1vw;
+    color: $color3;
+    letter-spacing: 0.1vw;
+}
