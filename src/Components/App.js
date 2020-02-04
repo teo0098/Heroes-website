@@ -8,11 +8,13 @@ import Heroes from './Heroes/Heroes';
 const App = () => {
   return (
     <Router>
-      <Navigation/>
+       <header>
+        <Navigation/>
+      </header>
       <Switch>
+        <Route exact path="/" component={Home}/>
         <Route path="/heroes" component={Heroes}/>
         <Route path="/login" render={() => <h1>Log in panel</h1>} />
-        <Route path="/" component={Home}/>
       </Switch>
     </Router>
   );

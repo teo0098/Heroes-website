@@ -1,0 +1,55 @@
+@import '../../../../colors';
+
+.Slide {
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    height: inherit;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Slide__h1 {
+    padding: 5vh;
+    font-size: 2.2vw;
+    background: $color4;
+    color: $color3;
+    letter-spacing: 0.1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5vh;
+    margin: 2vh 0;
+}
+
+.Slide__icon {
+    font-size: 4vw;
+    margin: 2vh 0;
+}
+
+.SlideFading {
+    height: inherit;
+}
+
+.SlideFade-enter {
+    opacity: 0;
+}
+
+.SlideFade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.SlideFade-exit {
+    opacity: 1;
+}
+
+.SlideFade-exit-active {
+    opacity: 0;
+    transition: opacity 2000ms;
+}
