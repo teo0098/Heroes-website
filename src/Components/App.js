@@ -8,9 +8,7 @@ import Heroes from './Heroes/Heroes';
 const App = () => {
   return (
     <Router>
-       <header>
-        <Navigation/>
-      </header>
+      <Navigation/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/heroes" component={Heroes}/>
