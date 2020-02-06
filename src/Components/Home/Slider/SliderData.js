@@ -10,6 +10,8 @@ const headings = [
     "Join us and assemble your powerful crew"
 ];
 
-const icons = [<i class="fas fa-map-signs Slide__icon"></i>, <i class="fas fa-book Slide__icon"></i>, <i class="fas fa-users Slide__icon"></i>];
+const icons = [ <i className="fas fa-map-signs Slide__icon"></i>, 
+                <i className="fas fa-book Slide__icon"></i>, 
+                <i className="fas fa-users Slide__icon"></i> ];
 
 export default { slides, headings, icons };

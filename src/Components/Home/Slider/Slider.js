@@ -7,12 +7,13 @@ const Slider = () => {
     let [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
-        setInterval(() => {
+        const slider = setInterval(() => {
             setCurrentSlide(prevState => {
                 if (prevState === 2) setCurrentSlide(0);
                 else setCurrentSlide(++prevState);
             });
         }, 5000);
+        return () => clearInterval(slider);
     }, []);
 
     return (
