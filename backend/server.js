@@ -1,5 +1,6 @@
 const express = require('express');
 require('./db/dbconnection');
+const Hero = require('./db/models/hero');
 
 const server = express();
 const port = process.env.PORT || 5000;
@@ -18,8 +19,32 @@ server.use((req, res, next) => {
     next();
 });
 
-server.get('/sheroes', (req, res) => {
-    res.send({welcome: "WELCOME"});
+server.get('/sheroes', async (req, res) => {
+    try {
+        const heroes = await Hero.find({}).limit(5);
+        res.status(200).send({ heroes });
+    } catch(error) {
+        res.status(404).send({ error });
+    }
+});
+
+server.get('/sheroes/:limit', async (req, res) => {
+    try {
+        const parsedLimit = parseInt(req.params.limit, 10);
+        const heroes = await Hero.find({}).skip((parsedLimit * 5) - 5).limit(5);
+        res.status(200).send({ heroes });
+    } catch(error) {
+        res.status(404).send({ error });
+    }
+});
+
+server.get('/sheroesCount', async (req, res) => {
+    try {
+        const heroesCount = await Hero.countDocuments({});
+        res.status(200).send({ count: heroesCount });
+    } catch(error) {
+        res.status(404).send({ error });
+    }
 });
 
 server.listen(port, () => {

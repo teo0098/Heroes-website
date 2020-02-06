@@ -11,8 +11,9 @@ const App = () => {
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route path="/heroes" component={Heroes}/>
+        <Route exact path="/heroes" component={Heroes}/>
         <Route path="/login" render={() => <h1>Log in panel</h1>} />
+        <Route path="/heroes/:limit" component={Heroes}/>
       </Switch>
     </Router>
   );
