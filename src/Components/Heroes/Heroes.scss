@@ -4,15 +4,4 @@
     width: 100%;
     height: 88vh;
     background: $color4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Heroes__div {
-    align-items: flex-start;
-    width: inherit;
-    display: flex;
-    justify-content: space-around;
-    padding: 10vh;
 }

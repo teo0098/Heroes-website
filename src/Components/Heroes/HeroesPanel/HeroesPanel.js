@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Hero from './Hero/Hero';
 import Spinner from '../../Spinner/Spinner';
+import Pagination from './../Pagination/Pagination';
+import './HeroesPanel.scss';
 
 const HeroesPanel = (props) => {
     const [heroes, setHeroes] = useState([]);
@@ -40,15 +42,18 @@ const HeroesPanel = (props) => {
     }, [props.match.params.limit]);
 
     return (
-        <React.Fragment>
+        <div className="HeroesPanel">
             {spinner === true ?
                 <Spinner/>
                 :
-                <div className="Heroes__div">
-                    {heroes.map((hero, index) => <Hero key={hero.callname} info={hero} delay={index + 1}/>)}
-                </div>
+                <React.Fragment>
+                    <div className="HeroesPanel__div">
+                        {heroes.map((hero, index) => <Hero key={hero.callname} info={hero} delay={index + 1}/>)}
+                    </div>
+                    <Pagination/>
+                </React.Fragment>
             }
-        </React.Fragment>
+        </div>
     )
 };
 
