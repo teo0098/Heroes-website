@@ -1,4 +1,4 @@
-@import '../../../_colors';
+@import '../../../../_colors';
 
 .Hero {
     display: flex;
@@ -8,10 +8,12 @@
     background: $color1;
     padding: 5vh 2vw;
     box-shadow: 0 0 1vw 0 $color4;
-    width: 18%;
+    width: 100%;
     min-height: 40vh;
     text-align: center;
     transition: transform 200ms ease-out;
+    color: $color4;
+    text-decoration: none;
 }
 
 .Hero:hover {
@@ -24,4 +26,8 @@
 
 .Hero__h2 {
     font-size: 1.9vw;
+}
+
+.HeroSpring {
+    width: 18%;
 }
