@@ -8,19 +8,7 @@ import './HeroesPanel.scss';
 const HeroesPanel = (props) => {
     const [heroes, setHeroes] = useState([]);
     const [spinner, setSpinner] = useState(true);
-    useEffect(() => {
-        const getHeroes = async () => {
-            try {
-                const sheroes = await axios.get(`/sheroes`);
-                const data = sheroes.data.heroes;
-                setHeroes(data);
-                setSpinner(false);
-            } catch(error) {
-                console.log("ERROR");
-            }
-        };
-        getHeroes();
-    }, []);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         let setTime;
@@ -28,13 +16,15 @@ const HeroesPanel = (props) => {
             setSpinner(true);
             try {
                 const sheroes = await axios.get(`/sheroes/${props.match.params.limit}`);
-                const data = sheroes.data.heroes;
-                setHeroes(data);
+                const data = sheroes.data;
+                if (data.error) throw new Error();
+                setHeroes(data.heroes);
                 setTime = setTimeout(() => {
                     setSpinner(false);
                 }, 300);
             } catch(error) {
-                console.log("ERROR");
+                setError(true);
+                setSpinner(false);
             }
         };
         getHeroes();
@@ -43,15 +33,21 @@ const HeroesPanel = (props) => {
 
     return (
         <div className="HeroesPanel">
-            {spinner === true ?
-                <Spinner/>
-                :
+            {error === true ?
                 <React.Fragment>
-                    <div className="HeroesPanel__div">
-                        {heroes.map((hero, index) => <Hero key={hero.callname} info={hero} delay={index + 1}/>)}
-                    </div>
-                    <Pagination/>
+                    <i className="fas fa-exclamation-circle HeroesPanel__errorIcon"></i>
+                    <h2 className="HeroesPanel__h2">Unable to fetch heroes, please try again later.</h2>
                 </React.Fragment>
+                :
+                spinner === true ?
+                    <Spinner/>
+                    :
+                    <React.Fragment>
+                        <div className="HeroesPanel__div">
+                            {heroes.map((hero, index) => <Hero key={hero.callname} info={hero} delay={index + 1}/>)}
+                        </div>
+                        <Pagination/>
+                    </React.Fragment>
             }
         </div>
     )
