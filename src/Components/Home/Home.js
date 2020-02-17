@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from './Slider/Slider';
 
 const Home = () => (
-    <React.Fragment>
+    <div style={{backgroundColor: 'black'}}>
         <Slider/>
-    </React.Fragment>
+    </div>
 );
 
 export default Home;

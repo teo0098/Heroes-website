@@ -1,0 +1,10 @@
+@import '../../_colors';
+
+.HeroInfo {
+    min-height: 88vh;
+    width: 100%;
+    background: $color4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

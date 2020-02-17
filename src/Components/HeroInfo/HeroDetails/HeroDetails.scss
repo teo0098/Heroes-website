@@ -1,0 +1,33 @@
+@import '../../../_colors';
+
+.HeroDetails {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $color2;
+}
+
+.HeroDetails__Transition {
+    width: 100%;
+    min-height: inherit;
+    padding: 4vh 5vw;
+    background-color: $color2;
+    display: flex;
+    flex-direction: column;
+}
+
+.HeroDetails__ul {
+    padding: 2vh 3vw;
+}
+
+.HeroDetails__li {
+    font-size: 1.5vw;
+    padding: 2vh 1vw;
+    color: $color3;
+    letter-spacing: 0.1vw;
+}
+
+.HeroDetails__icon {
+    align-self: center;
+    color: $color3;
+    font-size: 4vw;
+}
