@@ -4,8 +4,10 @@ import Hero from './Hero/Hero';
 import Spinner from '../../Spinner/Spinner';
 import Pagination from './../Pagination/Pagination';
 import './HeroesPanel.scss';
+import Error from '../../Error/Error';
 
 const HeroesPanel = (props) => {
+    const message = 'Unable to fetch heroes, please try again later.';
     const [heroes, setHeroes] = useState([]);
     const [spinner, setSpinner] = useState(true);
     const [error, setError] = useState(false);
@@ -34,12 +36,9 @@ const HeroesPanel = (props) => {
     return (
         <div className="HeroesPanel">
             {error === true ?
-                <React.Fragment>
-                    <i className="fas fa-exclamation-circle HeroesPanel__errorIcon"></i>
-                    <h2 className="HeroesPanel__h2">Unable to fetch heroes, please try again later.</h2>
-                </React.Fragment>
+                <Error> {message} </Error>
                 :
-                spinner === true ?
+                spinner === true || heroes.length === 0 ?
                     <Spinner/>
                     :
                     <React.Fragment>

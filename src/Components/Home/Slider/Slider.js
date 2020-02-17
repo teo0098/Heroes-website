@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Slider.scss'
 import Slide from './Slide/Slide';
 import SliderData from './SliderData';
+import { Spring } from 'react-spring/renderprops';
 
 const Slider = () => {
     let [currentSlide, setCurrentSlide] = useState(0);
@@ -17,12 +18,22 @@ const Slider = () => {
     }, []);
 
     return (
-        <div className="Slider">
-            <Slide img={SliderData.slides[currentSlide]}>
-                {SliderData.icons[currentSlide]}
-                {SliderData.headings[currentSlide]}
-            </Slide>
-        </div>
+        <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ duration: 2000 }}
+        >
+            {props => (
+                <div className="Slider__Spring" style={props}>
+                    <div className="Slider">
+                        <Slide img={SliderData.slides[currentSlide]}>
+                            {SliderData.icons[currentSlide]}
+                            {SliderData.headings[currentSlide]}
+                        </Slide>
+                    </div>
+                </div>
+            )}
+        </Spring>
     );
 };
 
