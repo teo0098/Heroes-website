@@ -1,0 +1,35 @@
+@import '../../_colors';
+
+.LoginPanel {
+    min-height: 88vh;
+    width: 100%;
+    background-image: url('https://s5.gifyu.com/images/shield.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.LoginPanel__form {
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginPanel__section {
+    background: $color3;
+    box-shadow: 0 0 1vw 0 $color4;
+    border-radius: 0.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 3vw;
+}
+
+.LoginPanel__Link {
+    color: $color1;
+    letter-spacing: 0.1vw;
+}

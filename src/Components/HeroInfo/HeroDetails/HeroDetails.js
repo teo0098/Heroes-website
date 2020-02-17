@@ -6,10 +6,13 @@ const HeroDetails = (props) => {
     const ref = useRef(null);
     const [scrolled, setScrolled] = useState(false);
 
+    const scrollPage = () => {
+        if (window.pageYOffset > ref.current.offsetTop - 500) setScrolled(true);
+    };
+
     useEffect(() => {
-        window.onscroll = () => {
-            if (window.pageYOffset > ref.current.offsetTop - 500) setScrolled(true);
-        }
+        window.addEventListener('scroll', scrollPage);
+        return () => window.removeEventListener('scroll', scrollPage);
     }, []);
 
     return (
