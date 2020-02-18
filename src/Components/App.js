@@ -5,8 +5,8 @@ import Navigation from './Navigation/Navigation';
 import Home from './Home/Home';
 import Heroes from './Heroes/Heroes';
 import HeroInfo from './HeroInfo/HeroInfo';
-import LoginPanel from './LoginPanel/LoginPanel';
-import SignupPanel from './SignupPanel/SignupPanel';
+import LoginPanel from './Sign/LoginPanel/LoginPanel';
+import SignupPanel from './Sign/SignupPanel/SignupPanel';
 
 const App = () => {
   return (
@@ -16,9 +16,9 @@ const App = () => {
         <Route exact path="/" component={Home}/>
         <Route exact path="/heroes" component={Heroes}/>
         <Route path="/login" component={LoginPanel}/>
+        <Route path="/signup" component={SignupPanel}/>
         <Route exact path="/heroes/:limit" component={Heroes}/>
         <Route path="/heroes/hero/:callname" component={HeroInfo}/>
-        <Route path='/signup' component={SignupPanel}/>
       </Switch>
     </Router>
   );
