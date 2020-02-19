@@ -1,6 +1,7 @@
 const express = require('express');
 const sheroes_route = require('./db/routes/sheroes');
 const sheroesCount_route = require('./db/routes/sheroesCount');
+const users_route = require('./db/routes/users');
 const bodyParser = require('body-parser');
 
 const server = express();
@@ -23,6 +24,7 @@ server.use((req, res, next) => {
 });
 server.use(sheroes_route);
 server.use(sheroesCount_route);
+server.use(users_route);
 
 server.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
