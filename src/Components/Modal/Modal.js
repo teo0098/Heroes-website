@@ -8,30 +8,27 @@ const Modal = props => {
         let setTime;
         setTime = setTimeout(() => {
             setShowModal(false);
-        }, 4000);
+        }, 3000);
         return () => clearTimeout(setTime);
     }, []);
     return (
-        showModal === true ?
-        <div className="Modal">
-            <Transition
+        <Transition
             items={showModal}
-            from={{ opacity: 0, transform: 'translateY(-10vh)' }}
-            enter={{ opacity: 1, transform: 'translateY(10vh)' }}
-            leave={{ opacity: 0, transform: 'translateY(-10vh)' }}
+            from={{ opacity: 0, transform: 'translateY(-5vh)' }}
+            enter={{ opacity: 1, transform: 'translateY(5vh)' }}
+            leave={{ opacity: 0, transform: 'translateY(-5vh)' }}
             config={{ duration: 500 }}
-            >
-                {showModal => showModal && (props2 =>
+        >
+            {showModal => showModal && (props2 => 
+                <div className="Modal">
                     <div style={props2}>
                         <div className="Modal__msg">
                             {props.children}
                         </div>
                     </div>
-                )}
-            </Transition>
-        </div> 
-        :
-        null
+                </div>
+            )}
+        </Transition>
     );
 }   
 

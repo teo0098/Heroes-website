@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './Form.scss';
+import { connect } from 'react-redux';
+import axios from 'axios';
 
-const FormSignup = () => {
-    const { register, handleSubmit, errors, watch } = useForm();
+const FormSignup = props => {
+    const { register, handleSubmit, errors, watch, reset } = useForm();
 
-    const onSubmit = data => {
-        
+    useEffect(() => {
+        return () => props.guest();
+    }, [props]);
+
+    const onSubmit = async formData => {
+        props.signingUp();
+        try {
+            const dbData = {
+                username: formData.name,
+                password: formData.pass
+            };
+            const sign = await axios.post('/users', dbData);
+            if (sign.data.user === 'EXISTS') return props.exists();
+            else if (sign.data.user === 'ERROR') throw new Error();
+            props.registered();
+        } catch(error) {
+            props.error();
+        }
+        reset();
     };
 
     return (
@@ -33,7 +52,6 @@ const FormSignup = () => {
             style={{ margin: '1vh 0' }}
             />
             {errors.pass && <p className="Form__p">{errors.pass.message}</p>}
-
             <TextField 
             name="rpass" 
             inputRef={register({required: true, validate: value => {
@@ -51,4 +69,14 @@ const FormSignup = () => {
     );
 }
 
-export default FormSignup;
+const mapDispatchToProps = dispatch => {
+    return {
+        error: () => dispatch({ type: 'ERROR' }),
+        registered: () => dispatch({ type: 'REGISTERED' }),
+        exists: () => dispatch({ type: 'EXISTS' }),
+        guest: () => dispatch({ type: 'GUEST' }),
+        signingUp: () => dispatch({ type: 'REGISTERING' })
+    };
+};
+
+export default connect(null, mapDispatchToProps)(FormSignup);
