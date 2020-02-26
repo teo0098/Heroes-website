@@ -8,7 +8,7 @@ const Modal = props => {
         let setTime;
         setTime = setTimeout(() => {
             setShowModal(false);
-        }, 3000);
+        }, 2500);
         return () => clearTimeout(setTime);
     }, []);
     return (

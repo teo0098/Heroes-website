@@ -40,6 +40,14 @@ const loginReducer = (state = { user: 'GUEST', token: '', spinner: false, msg: '
                 msg: '',
                 username: ''
             }
+        case 'LOGGEDOUT':
+            return {
+                user: 'LOGGEDOUT',
+                token: '',
+                spinner: false,
+                msg: 'Logged out successfully',
+                username: ''
+            }
         default:
             return state;
     }

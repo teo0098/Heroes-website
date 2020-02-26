@@ -19,7 +19,9 @@ const FormLogin = props => {
             const login = await axios.post('/users/login', dbData);
             if (login.data.user === 'NOT EXISTS') return props.notExists();
             else if (login.data.user === 'ERROR') throw new Error();
-            props.logged(login.data.user);
+            sessionStorage.setItem('token', login.data.token);
+            sessionStorage.setItem('user', login.data.username);
+            props.logged(login.data);
         } catch(error) {
             props.error();
         }

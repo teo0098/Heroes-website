@@ -26,7 +26,8 @@ const mapStateToProps = state => {
     return {
         user: state.loginReducer.user,
         spinner: state.loginReducer.spinner,
-        msg: state.loginReducer.msg
+        msg: state.loginReducer.msg,
+        token: state.loginReducer.token
     };
 };
 

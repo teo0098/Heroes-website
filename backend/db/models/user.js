@@ -10,6 +10,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true
+    },
+    crew: {
+        type: Array,
+        required: false
     }
 });
 

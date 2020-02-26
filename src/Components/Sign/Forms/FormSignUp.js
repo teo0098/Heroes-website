@@ -35,8 +35,8 @@ const FormSignup = props => {
         <form onSubmit={handleSubmit(onSubmit)} className="Form" noValidate autoComplete="off">
             <TextField 
                 name="name"
-                inputRef={register({ required: true, pattern: { value: /^[A-Z0-9a-z]{5,20}$/,
-                        message: "User's name must have from 5 up to 20 alphanumeric characters" } })} 
+                inputRef={register({ required: true, pattern: { value: /^[A-Z0-9a-z]{5,15}$/,
+                        message: "User's name must have from 5 up to 15 alphanumeric characters" } })} 
                 id="standard-basic" 
                 label="User's name" 
                 style={{ margin: '1vh 0' }}

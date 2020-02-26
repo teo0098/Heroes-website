@@ -6,7 +6,7 @@ const HeroIntro = (props) => (
     <Spring
     from={{ opacity: 0 }}
     to={{ opacity: 1 }}
-    config={{ duration: 1000 }}
+    config={{ duration: 2000 }}
     >
         {props2 => (
             <div className="HeroIntro__Spring" style={props2}>
