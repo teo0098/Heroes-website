@@ -1,16 +1,24 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './HeroDetails.scss';
 import {Transition} from 'react-spring/renderprops'
+import Button from '@material-ui/core/Button';
 
 const HeroDetails = (props) => {
     const ref = useRef(null);
     const [scrolled, setScrolled] = useState(false);
 
+    const scrollPage = () => {
+        if (window.pageYOffset > ref.current.offsetTop - 500) setScrolled(true);
+    };
+
     useEffect(() => {
-        window.onscroll = () => {
-            if (window.pageYOffset > ref.current.offsetTop - 500) setScrolled(true);
-        }
+        window.addEventListener('scroll', scrollPage);
+        return () => window.removeEventListener('scroll', scrollPage);
     }, []);
+
+    const addHero = () => {
+        
+    };
 
     return (
         <section ref={ref} className="HeroDetails">
@@ -38,6 +46,8 @@ const HeroDetails = (props) => {
                                 </ul>
                             </li>
                         </ul>
+                        <Button onClick={addHero} className="BTN" variant="contained" 
+                        style={{ backgroundColor: '#b71c1c', alignSelf: 'center' }}>Add to my crew</Button>
                     </div>
                 )}
             </Transition>

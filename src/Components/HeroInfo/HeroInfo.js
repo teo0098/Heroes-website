@@ -4,10 +4,13 @@ import Spinner from '../Spinner/Spinner';
 import './HeroInfo.scss';
 import HeroIntro from './HeroIntro/HeroIntro';
 import HeroDetails from './HeroDetails/HeroDetails';
+import Error from '../Error/Error';
 
 const HeroInfo = (props) => {
+    const message = 'Unable to fetch hero, please try again later.';
     const [heroInfo, setHeroInfo] = useState({});
     const [spinner, setSpinner] = useState(true);
+    const [error, setError] = useState(false);
     useEffect(() => {
         let setTime;
         const getHeroInfo = async () => {
@@ -19,6 +22,7 @@ const HeroInfo = (props) => {
                     setSpinner(false);
                 }, 300);
             } catch(error) {
+                setError(true);
                 setSpinner(false);
             }
         };
@@ -28,7 +32,10 @@ const HeroInfo = (props) => {
 
     return (
         <div className="HeroInfo">
-            {spinner === true ?
+            {error === true ?
+            <Error> {message} </Error>
+            :
+            spinner === true ?
                 <Spinner/>
                 :
                 <React.Fragment>

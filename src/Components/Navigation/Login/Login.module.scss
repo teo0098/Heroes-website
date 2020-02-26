@@ -5,18 +5,67 @@
     background: $color1;
     text-decoration: none;
     padding: 2vh;
-    border-radius: 0.2vh;
+    border-radius: 0.4vh;
     margin-left: auto;
     margin-right: 4vw;
     font-size: 1.1vw;
     transition: color 0.2s ease-out;
+    position: relative;
 }
 
 .Login:hover {
     color: $color3;
 }
 
+.Login__logged:hover .Login__ul {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 .Login__icon {
     font-size: 1.2vw;
     margin: 0 0 0 1vw;
+}
+
+.Login__ul {
+    position: absolute;
+    z-index: 200;
+    list-style-type: none;
+    top: 100%;
+    background-color: $color4;
+    width: 100%;
+    padding: 1vh 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-5vh);
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    border-radius: 0.4vh;
+}
+
+.Login__li {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Login__li:hover, .Login__Link:hover {
+    color: $color1;
+}
+
+.Login__Link {
+    display: flex;
+    color: $color3;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 2vh 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

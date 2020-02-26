@@ -1,0 +1,11 @@
+@import '../../../_colors';
+
+.Form {
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Form__p {
+    color: $color1;
+}
