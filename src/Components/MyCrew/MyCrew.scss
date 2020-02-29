@@ -1,0 +1,23 @@
+@import '../../_colors';
+
+.MyCrew {
+    min-height: 88vh;
+    width: 100%;
+    background-color: $color4;
+    background-image: url('https://s5.gifyu.com/images/crew.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyCrew__table {
+    width: 50vw;
+    margin: 5vh 0;
+}
+
+.MyCrew__Link {
+    color: $color4;
+}

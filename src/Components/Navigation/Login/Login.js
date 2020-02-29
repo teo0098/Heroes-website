@@ -4,6 +4,7 @@ import LoginStyles from './Login.module.scss';
 import { connect } from 'react-redux';
 import mapLoginDispatchToProps from '../../../store/loginReducer/loginAction';
 import Modal from '../../Modal/Modal';
+import { Redirect } from 'react-router-dom';
 
 const Login = props => {
     const logOut = () => {
@@ -38,7 +39,10 @@ const Login = props => {
             </section>
             }
             {props.user === 'LOGGEDOUT' ?
-            <Modal> {props.msg} </Modal>
+            <React.Fragment>
+                <Modal> {props.msg} </Modal>
+                <Redirect to='/login'/>
+            </React.Fragment>
             :
             null
             }

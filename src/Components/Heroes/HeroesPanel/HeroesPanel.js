@@ -18,9 +18,8 @@ const HeroesPanel = (props) => {
             setSpinner(true);
             try {
                 const sheroes = await axios.get(`/sheroes/${props.match.params.limit}`);
-                const data = sheroes.data;
-                if (data.error) throw new Error();
-                setHeroes(data.heroes);
+                if (sheroes.data.error) throw new Error();
+                setHeroes(sheroes.data.heroes);
                 setTime = setTimeout(() => {
                     setSpinner(false);
                 }, 300);

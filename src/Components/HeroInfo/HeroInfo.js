@@ -6,14 +6,16 @@ import HeroIntro from './HeroIntro/HeroIntro';
 import HeroDetails from './HeroDetails/HeroDetails';
 import Error from '../Error/Error';
 
-const HeroInfo = (props) => {
+const HeroInfo = props => {
     const message = 'Unable to fetch hero, please try again later.';
     const [heroInfo, setHeroInfo] = useState({});
     const [spinner, setSpinner] = useState(true);
     const [error, setError] = useState(false);
+
     useEffect(() => {
         let setTime;
         const getHeroInfo = async () => {
+            setSpinner(true);
             try {
                 const hero = await axios.get(`/sheroes/hero/${props.match.params.callname}`);
                 if (hero.data.error) throw new Error();
