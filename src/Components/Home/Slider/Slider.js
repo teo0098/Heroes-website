@@ -13,7 +13,7 @@ const Slider = () => {
                 if (prevState === 2) setCurrentSlide(0);
                 else setCurrentSlide(++prevState);
             });
-        }, 5000);
+        }, 4000);
         return () => clearInterval(slider);
     }, []);
 

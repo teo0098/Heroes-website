@@ -7,6 +7,7 @@ import Heroes from './Heroes/Heroes';
 import HeroInfo from './HeroInfo/HeroInfo';
 import LoginPanel from './Sign/LoginPanel/LoginPanel';
 import SignupPanel from './Sign/SignupPanel/SignupPanel';
+import MyCrew from './MyCrew/MyCrew';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/signup" component={SignupPanel}/>
         <Route exact path="/heroes/:limit" component={Heroes}/>
         <Route path="/heroes/hero/:callname" component={HeroInfo}/>
+        <Route path="/my-crew" component={MyCrew}/>
       </Switch>
     </Router>
   );

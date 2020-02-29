@@ -2,8 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import './HeroDetails.scss';
 import {Transition} from 'react-spring/renderprops'
 import Button from '@material-ui/core/Button';
+import withUpdateCrew from '../../HOC/withUpdateCrew';
+import Spinner from '../../Spinner/Spinner';
+import Modal from '../../Modal/Modal';
 
-const HeroDetails = (props) => {
+const HeroDetails = props => {
     const ref = useRef(null);
     const [scrolled, setScrolled] = useState(false);
 
@@ -15,10 +18,6 @@ const HeroDetails = (props) => {
         window.addEventListener('scroll', scrollPage);
         return () => window.removeEventListener('scroll', scrollPage);
     }, []);
-
-    const addHero = () => {
-        
-    };
 
     return (
         <section ref={ref} className="HeroDetails">
@@ -46,7 +45,15 @@ const HeroDetails = (props) => {
                                 </ul>
                             </li>
                         </ul>
-                        <Button onClick={addHero} className="BTN" variant="contained" 
+                        {props.spinner === true ?
+                            <Spinner />
+                            :
+                            props.msg !== '' ?
+                            <Modal> {props.msg} </Modal>
+                            :
+                            null
+                        }
+                        <Button onClick={props.addHero} variant="contained" 
                         style={{ backgroundColor: '#b71c1c', alignSelf: 'center' }}>Add to my crew</Button>
                     </div>
                 )}
@@ -55,4 +62,4 @@ const HeroDetails = (props) => {
     );
 };
 
-export default HeroDetails;
+export default withUpdateCrew(HeroDetails);

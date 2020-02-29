@@ -13,11 +13,12 @@
     background-color: $color2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .HeroDetails__ul {
     padding: 2vh 3vw;
+    align-self: flex-start;
 }
 
 .HeroDetails__li {
@@ -28,7 +29,6 @@
 }
 
 .HeroDetails__icon {
-    align-self: center;
     color: $color3;
     font-size: 4vw;
 }
