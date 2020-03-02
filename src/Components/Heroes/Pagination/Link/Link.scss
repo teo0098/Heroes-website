@@ -6,7 +6,7 @@
     padding: 1vh 1vw;
     border-radius: 0.2vh;
     box-shadow: 0 0 0.5vw 0 $color4;
-    transition: transform 200ms ease-out, color 100ms ease-out, background 100ms ease-out;
+    transition: all 200ms ease-out;
     text-decoration: none;
     color: $color4;
     font-size: 1.5vw;
@@ -16,7 +16,6 @@
 .Link:hover {
     color: $color1;
     background: $color3;
-    transform: scale(1.1);
 }
 
 .Link--active {

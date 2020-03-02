@@ -40,7 +40,7 @@ const Slider = () => {
                     <div className="Slider">
                         <ArrowForwardIosIcon onClick={goBack} style={{ 
                             backgroundColor: '#cfd8dc',
-                            color: '#b71c1c', 
+                            color: '#212121', 
                             position: 'absolute', 
                             zIndex: '1000',
                             left: 0,
@@ -51,7 +51,7 @@ const Slider = () => {
                             borderRadius: '0.4vh' }}/>
                         <ArrowForwardIosIcon onClick={goForth} style={{ 
                             backgroundColor: '#cfd8dc',
-                            color: '#b71c1c', 
+                            color: '#212121', 
                             position: 'absolute', 
                             zIndex: '1000',
                             right: 0,
