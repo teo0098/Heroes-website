@@ -18,7 +18,6 @@ const MyCrew = () => {
         setSpinner(true);
         try {
             const removedHero = await axios.delete(`/crew/del/${hero}`, { headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` } });
-            console.log(removedHero);
             if (removedHero.data.error) throw new Error();
             setTimeout(() => {
                 setSpinner(false);
