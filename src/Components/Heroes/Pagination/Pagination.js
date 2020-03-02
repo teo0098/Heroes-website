@@ -3,10 +3,13 @@ import axios from 'axios';
 import Link from './Link/Link';
 import './Pagination.scss';
 import Spinner from '../../Spinner/Spinner';
+import Error from '../../Error/Error';
 
 const Pagination = (props) => {
     const [heroesPages, setHeroesPages] = useState(-1);
     const [spinner, setSpinner] = useState(true);
+    const [error, setError] = useState(false);
+
     useEffect(() => {
         const getCount = async () => {
             try {
@@ -14,7 +17,8 @@ const Pagination = (props) => {
                 setHeroesPages(Math.ceil(+count.data.count / 5));
                 setSpinner(false);
             } catch (error) {
-                console.log("ERROR");
+                setError(true);
+                setSpinner(false);
             }
         };
         getCount();
@@ -29,7 +33,10 @@ const Pagination = (props) => {
 
     return (
         <React.Fragment>
-            {spinner === true ?
+            {error === true ?
+            <Error> Can't get pages </Error>
+            :
+            spinner === true ?
                 <Spinner/>
                 :
                 <div className="Pagination">
