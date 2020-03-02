@@ -6,7 +6,7 @@ import Pagination from './../Pagination/Pagination';
 import './HeroesPanel.scss';
 import Error from '../../Error/Error';
 
-const HeroesPanel = (props) => {
+const HeroesPanel = props => {
     const message = 'Unable to fetch heroes, please try again later.';
     const [heroes, setHeroes] = useState([]);
     const [spinner, setSpinner] = useState(true);
