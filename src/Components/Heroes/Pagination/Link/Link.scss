@@ -22,3 +22,32 @@
     color: $color1;
     background: $color3;
 }
+
+@media (max-width: 900px) {
+    .Link {
+        font-size: 2vw;
+        padding: 1.5vh 1.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .Link {
+        margin: 0 2vw;
+        font-size: 2.5vw;
+        padding: 1.8vh 1.8vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .Link {
+        font-size: 3.5vw;
+        padding: 2vh 2.2vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .Link {
+        font-size: 4vw;
+        padding: 2vh 2.5vw;
+    }
+}

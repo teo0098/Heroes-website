@@ -22,3 +22,27 @@
     color: $color3;
     letter-spacing: 0.1vw;
 }
+
+@media (max-width: 900px) {
+    .Modal__msg {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .Modal__msg {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .Modal__msg {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .Modal__msg {
+        font-size: 5vw;
+    }
+}

@@ -31,3 +31,37 @@
 .HeroSpring {
     width: 18%;
 }
+
+@media (max-width: 800px) {
+    .Hero {
+        min-height: 15vh;
+        margin: 2vh 0;
+    }
+    .Hero__h2 {
+        font-size: 2.2vw;
+    }
+    .HeroSpring {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Hero__icon {
+        font-size: 8vw;
+    }
+    .Hero__h2 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .HeroSpring {
+        width: 100%;
+    }
+    .Hero__icon {
+        font-size: 10vw;
+    }
+    .Hero__h2 {
+        font-size: 4vw;
+    }
+}

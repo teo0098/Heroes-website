@@ -21,3 +21,9 @@
 .MyCrew__Link {
     color: $color4;
 }
+
+@media (max-width: 600px) {
+    .MyCrew__table {
+        width: 90%;
+    }
+}

@@ -32,3 +32,39 @@
     color: $color3;
     font-size: 4vw;
 }
+
+@media (max-width: 900px) {
+    .HeroDetails__li {
+        font-size: 2vw;
+    }
+    .HeroDetails__icon {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .HeroDetails__li {
+        font-size: 2.5vw;
+    }
+    .HeroDetails__icon {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .HeroDetails__li {
+        font-size: 3vw;
+    }
+    .HeroDetails__icon {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .HeroDetails__li {
+        font-size: 4vw;
+    }
+    .HeroDetails__icon {
+        font-size: 7vw;
+    }
+}

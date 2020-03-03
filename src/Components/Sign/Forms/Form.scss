@@ -9,3 +9,15 @@
 .Form__p {
     color: $color1;
 }
+
+@media (max-width: 800px) {
+    .Form {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .Form {
+        width: 80vw;
+    }
+}
