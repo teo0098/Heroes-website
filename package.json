@@ -29,7 +29,6 @@
   "scripts": {
     "start": "cd backend && node server.js",
     "create": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "env-cmd -f ../dev.env node backend/server.js",
