@@ -14,6 +14,7 @@
 }
 
 .Modal__msg {
+    text-align: center;
     padding: 2vh 3vw;
     background-color: $color4;
     box-shadow: 0 0 1vw 0 $color4;
@@ -44,5 +45,11 @@
 @media (max-width: 450px) {
     .Modal__msg {
         font-size: 5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .Modal__msg {
+        font-size: 6vw;
     }
 }

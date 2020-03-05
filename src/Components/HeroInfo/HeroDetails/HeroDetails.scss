@@ -68,3 +68,21 @@
         font-size: 7vw;
     }
 }
+
+@media (max-width: 400px) {
+    .HeroDetails__li {
+        font-size: 5vw;
+    }
+    .HeroDetails__icon {
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .HeroDetails__li {
+        font-size: 6vw;
+    }
+    .HeroDetails__icon {
+        font-size: 10vw;
+    }
+}

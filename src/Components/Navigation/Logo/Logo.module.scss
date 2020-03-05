@@ -18,3 +18,66 @@
     color: $color3;
     letter-spacing: 0.1vw;
 }
+
+@media (max-width: 1000px) {
+    .Logo__i {
+        font-size: 3.5vw;
+    }
+    .Logo__h2 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .Logo__i {
+        font-size: 4vw;
+    }
+    .Logo__h2 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .Logo__i {
+        font-size: 5vw;
+    }
+    .Logo__h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .Logo__i {
+        font-size: 6vw;
+    }
+    .Logo__h2 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .Logo__i {
+        font-size: 7vw;
+    }
+    .Logo__h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .Logo__i {
+        font-size: 8vw;
+    }
+    .Logo__h2 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .Logo__i {
+        font-size: 10vw;
+    }
+    .Logo__h2 {
+        font-size: 9vw;
+    }
+}

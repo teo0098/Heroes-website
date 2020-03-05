@@ -47,3 +47,15 @@
         font-size: 5vw;
     }
 }
+
+@media (max-width: 400px) {
+    .HeroIntro__h1 {
+        font-size: 6.5vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .HeroIntro__h1 {
+        font-size: 7.5vw;
+    }
+}

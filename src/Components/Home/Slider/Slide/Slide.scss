@@ -77,11 +77,21 @@
         font-size: 7vw;
     }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 400px) {
     .Slide__h1 {
         font-size: 4.5vw;
     }
     .Slide__icon {
         font-size: 9vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .Slide__h1 {
+        font-size: 5.5vw;
+    }
+    .Slide__icon {
+        font-size: 11vw;
     }
 }
