@@ -34,7 +34,7 @@
     "eject": "react-scripts eject",
     "server": "env-cmd -f ../dev.env node backend/server.js",
     "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
+    "heroku-postbuild": "cd app && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
