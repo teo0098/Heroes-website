@@ -34,9 +34,7 @@
     "server": "env-cmd -f ../dev.env node backend/server.js",
     "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
-  },
-  //uncomment if you are in development mode
-  //"proxy": "http://localhost:5000",
+  },//"proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
