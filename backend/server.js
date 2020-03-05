@@ -6,6 +6,9 @@ const crew_route = require('./db/routes/crew');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+//Add line below to package.json when you are in a development mode
+//"proxy": "http://localhost:5000",
+
 const server = express();
 const port = process.env.PORT || 5000;
 
