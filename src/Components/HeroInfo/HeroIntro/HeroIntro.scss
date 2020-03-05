@@ -23,3 +23,39 @@
     box-shadow: 0 0 1vw 0 $color4;
     color: $color1;
 }
+
+@media (max-width: 1000px) {
+    .HeroIntro__h1 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .HeroIntro__h1 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .HeroIntro__h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .HeroIntro__h1 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .HeroIntro__h1 {
+        font-size: 6.5vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .HeroIntro__h1 {
+        font-size: 7.5vw;
+    }
+}

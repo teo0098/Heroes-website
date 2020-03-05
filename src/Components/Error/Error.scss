@@ -14,3 +14,30 @@
     color: $color3;
     margin: 2vh;
 }
+
+@media (max-width: 800px) {
+    .Error__errorIcon {
+        font-size: 8vw;
+    }
+    .Error__h2 {
+        font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .Error__errorIcon {
+        font-size: 10vw;
+    }
+    .Error__h2 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .Error__errorIcon {
+        font-size: 12vw;
+    }
+    .Error__h2 {
+        font-size: 4vw;
+    }
+}

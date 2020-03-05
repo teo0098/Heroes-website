@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     table: {
-      minWidth: 650
+      minWidth: 300
     }
   });
 
