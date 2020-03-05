@@ -38,7 +38,7 @@ const Navigation = () => {
                 >
                     {respNav => respNav && (props => 
                         <div id="respOptions" onClick={closeRespMenu} style={props} className={NavigationStyles.ResNavigation__options}>
-                            <CancelIcon style={{ color: '#cfd8dc', fontSize: '40px', position: 'absolute', right: '1.5vw', top: '2vh' }}/>
+                            <CancelIcon style={{ color: '#cfd8dc', fontSize: '40px', position: 'absolute', right: '1.5vw', top: '2vh', cursor: 'pointer' }}/>
                             <Nav/>
                             <Login/>
                         </div>
