@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "node backend/server.js",
+    "build": "react-scripts build",
     "server": "env-cmd -f ../dev.env node backend/server.js",
     "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd ./ && npm install && npm run build"
