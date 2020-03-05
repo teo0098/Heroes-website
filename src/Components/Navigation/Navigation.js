@@ -33,7 +33,7 @@ const Navigation = () => {
                     items={respNav}
                     from={{ opacity: 0 }}
                     enter={{ opacity: 1 }}
-                    leave={{ opacity: 0 }}
+                    leave={{ display: "none" }}
                     config={{ duration: 300 }}
                 >
                     {respNav => respNav && (props => 
