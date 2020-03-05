@@ -27,13 +27,16 @@
     "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node backend/server.js",
+    "run": "react-scripts start",
     "build": "react-scripts build",
+    "create": "cd app && npm run build",
+    "install": "cd app && npm install",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "env-cmd -f ../dev.env node backend/server.js",
     "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
+    "heroku-postbuild": "npm run install && npm run create"
   },
   "eslintConfig": {
     "extends": "react-app"

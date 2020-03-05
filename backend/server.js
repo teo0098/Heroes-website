@@ -37,7 +37,7 @@ server.use(users_route);
 server.use(crew_route);
 
 if (process.env.NODE_ENV === 'production') {
-    server.use(express.static('../build'));
+    server.use(express.static('app/build'));
 
     server.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, '../build/index.html'));
