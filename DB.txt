@@ -1,0 +1,365 @@
+/* 1 */
+{
+    "_id" : ObjectId("5e3b19648a330a2e9cfd625e"),
+    "agroups" : [ 
+        "Avengers", 
+        "Stark Industries", 
+        "S.H.I.E.L.D"
+    ],
+    "abilities" : [ 
+        "Intelligence on a genius level", 
+        "Sense to innovate new technology, that enhances his powers"
+    ],
+    "callname" : "Iron Man",
+    "realname" : "Tony Stark",
+    "birthPlace" : "Long Island, New York",
+    "picture" : "https://s4.gifyu.com/images/ironman.jpg",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5e3b1df4e47ac00d00899a50"),
+    "agroups" : [ 
+        "Avengers", 
+        "KGB", 
+        "S.H.I.E.L.D"
+    ],
+    "abilities" : [ 
+        "Astonishing fastness, agility, endurance, reflex and concentration", 
+        "Extraordinary fighting and operating weapons skills", 
+        "Perfect spy"
+    ],
+    "callname" : "Black Widow",
+    "realname" : "Natasha Romanov",
+    "birthPlace" : "St. Petersburg, Russia",
+    "picture" : "https://s4.gifyu.com/images/blackwidow.jpg",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5e3b2f5a6449f13b9c6d427e"),
+    "agroups" : [ 
+        "Avengers"
+    ],
+    "abilities" : [ 
+        "Special uniform allowing him to reduce the size of his body, even to the size of an atom"
+    ],
+    "callname" : "Ant-Man",
+    "realname" : "Scott Lang",
+    "birthPlace" : "Coral Gables, Florida",
+    "picture" : "https://s4.gifyu.com/images/antman.jpg",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5e3b307d0eb1ab11fc2ca178"),
+    "agroups" : [ 
+        "X-Men"
+    ],
+    "abilities" : [ 
+        "Expert in genetics", 
+        "Superhuman strength, agility, fastness and endurance", 
+        "Flexible body", 
+        "Very sharp senses", 
+        "Great fighting skills"
+    ],
+    "callname" : "Beast",
+    "realname" : "Henry McCoy",
+    "birthPlace" : "Dunfee, Illinois",
+    "picture" : "https://s4.gifyu.com/images/beast.jpg",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5e3b321095b5da1638ec7888"),
+    "agroups" : [ 
+        "Avengers"
+    ],
+    "abilities" : [ 
+        "Amazing fighting skills", 
+        "Superhuman speed, endurance, fastness and agility", 
+        "Brilliant strategy mind", 
+        "Very sharp senses"
+    ],
+    "callname" : "Black Panther",
+    "realname" : "T'Challa",
+    "birthPlace" : "Wakanda",
+    "picture" : "https://s5.gifyu.com/images/blackpanther.jpg",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5e3b3347c62597409cfbd498"),
+    "agroups" : [ 
+        "Avengers"
+    ],
+    "abilities" : [ 
+        "Extraordinary fastness, agility, endurance and strength", 
+        "Great skills at fighting", 
+        "Amazing battle strategist"
+    ],
+    "callname" : "Captain America",
+    "realname" : "Steve Rogers",
+    "birthPlace" : "New York",
+    "picture" : "https://s4.gifyu.com/images/captainamerica.jpg",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5e3b36dd5ce99937985d95a2"),
+    "agroups" : [ 
+        "None"
+    ],
+    "abilities" : [ 
+        "Extraordinary fastness, agility, endurance and strength", 
+        "Great skills at fighting and operating weapons", 
+        "Astonishing health recovery capability"
+    ],
+    "callname" : "Deadpool",
+    "realname" : "Wade Wilson",
+    "birthPlace" : "Canada",
+    "picture" : "https://s4.gifyu.com/images/deadpool.jpg",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5e3b39e2b3ef5247980a0f9c"),
+    "agroups" : [ 
+        "Avengers", 
+        "Defenders"
+    ],
+    "abilities" : [ 
+        "Extraordinary fastness, agility, endurance and strength", 
+        "The more angry he becomes, the more power he acquires"
+    ],
+    "callname" : "Hulk",
+    "realname" : "Bruce Banner",
+    "birthPlace" : "Dayton, Ohio",
+    "picture" : "https://s4.gifyu.com/images/hulk.jpg",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5e3b3a4c6d98d410f8190d58"),
+    "agroups" : [ 
+        "Avengers", 
+        "Defenders"
+    ],
+    "abilities" : [ 
+        "Extraordinary fastness, agility, endurance and strength", 
+        "Amazing skills at using bow", 
+        "Eagle eye", 
+        "Great fighting skills"
+    ],
+    "callname" : "Hawkeye",
+    "realname" : "Clint Barton",
+    "birthPlace" : "Waverly, Iowa",
+    "picture" : "https://s4.gifyu.com/images/hawkeye.jpg",
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5e3b3abf09ca303e2cb2275b"),
+    "agroups" : [ 
+        "New Mutants"
+    ],
+    "abilities" : [ 
+        "Master of controlling magnetic field"
+    ],
+    "callname" : "Magneto",
+    "realname" : "Magnus",
+    "birthPlace" : "Uknown",
+    "picture" : "https://s4.gifyu.com/images/magneto.jpg",
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5e3b3b26b63ded25347bf1d1"),
+    "agroups" : [ 
+        "X-Men", 
+        "New Mutants"
+    ],
+    "abilities" : [ 
+        "Master of reading minds and influencing on them"
+    ],
+    "callname" : "Professor X",
+    "realname" : "Charles Xavier",
+    "birthPlace" : "New York",
+    "picture" : "https://s4.gifyu.com/images/professorX.jpg",
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5e3b3c1c7ff0b60ba0ed8929"),
+    "agroups" : [ 
+        "Avengers"
+    ],
+    "abilities" : [ 
+        "Superhuman strength, agility, endurance, fastness and flexibility", 
+        "Capable fo producing net which helps him climb up walls", 
+        "Sharp sense, that warns him against danger"
+    ],
+    "callname" : "Spider-Man",
+    "realname" : "Peter Parker",
+    "birthPlace" : "Forest Hills",
+    "picture" : "https://s4.gifyu.com/images/spiderman.jpg",
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5e3b3c92f93d514180e19279"),
+    "agroups" : [ 
+        "Guardians of the Galaxy"
+    ],
+    "abilities" : [ 
+        "Superhuman strength, agility, endurance", 
+        "Great at operating various weapons"
+    ],
+    "callname" : "Star-Lord",
+    "realname" : "Peter Quill",
+    "birthPlace" : "Earth",
+    "picture" : "https://s4.gifyu.com/images/starlord.jpg",
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5e3b3d54438be84488873ac9"),
+    "agroups" : [ 
+        "Avengers", 
+        "Asgard"
+    ],
+    "abilities" : [ 
+        "Superhuman, astonishing strength, agility, endurance, fastness", 
+        "Great at fighting", 
+        "Not afraid of battles", 
+        "God of thunders", 
+        "Capable of flying"
+    ],
+    "callname" : "Thor",
+    "realname" : "Thor Odinson",
+    "birthPlace" : "Cave in Norway",
+    "picture" : "https://s4.gifyu.com/images/thor.jpg",
+    "__v" : 0
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5e3b3dd48e88ee377027f717"),
+    "agroups" : [ 
+        "X-Men", 
+        "Defenders"
+    ],
+    "abilities" : [ 
+        "Astonishing strength, agility, endurance, fastness", 
+        "Great at fighting", 
+        "Unbelievable regeneration skills", 
+        "Superhuman sharp senses"
+    ],
+    "callname" : "Wolverine",
+    "realname" : "James Howlett",
+    "birthPlace" : "Canada",
+    "picture" : "https://s4.gifyu.com/images/wolverine.jpg",
+    "__v" : 0
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5e3b3eab7c1ce746e403f774"),
+    "agroups" : [ 
+        "Justice League"
+    ],
+    "abilities" : [ 
+        "Astonishing strength, agility, endurance, fastness", 
+        "Great at fighting", 
+        "Real warrior spirit"
+    ],
+    "callname" : "Wonder Woman",
+    "realname" : "Diana of Themyscira",
+    "birthPlace" : "Paradise Island",
+    "picture" : "https://s4.gifyu.com/images/wonderwoman.jpg",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5e3b3efb8a4f5146784ad9a8"),
+    "agroups" : [ 
+        "Justice League"
+    ],
+    "abilities" : [ 
+        "Super strength, agility, endurance, fastness", 
+        "Light speed"
+    ],
+    "callname" : "Flash",
+    "realname" : "Barry Allen",
+    "birthPlace" : "Central City",
+    "picture" : "https://s4.gifyu.com/images/flash.jpg",
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5e3b3f6533e3db36f8b7bcb8"),
+    "agroups" : [ 
+        "Justice League"
+    ],
+    "abilities" : [ 
+        "Great strength, agility, endurance, fastness", 
+        "Brilliant mind"
+    ],
+    "callname" : "Cyborg",
+    "realname" : "Victor Stone",
+    "birthPlace" : "Uknown",
+    "picture" : "https://s4.gifyu.com/images/cyborg.jpg",
+    "__v" : 0
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5e3b3fd9a3d6eb14ac834c77"),
+    "agroups" : [ 
+        "Justice League"
+    ],
+    "abilities" : [ 
+        "Great strength, agility, endurance, fastness", 
+        "King of waters", 
+        "Capability of breathing in the water", 
+        "Control underwater animals"
+    ],
+    "callname" : "Aquaman",
+    "realname" : "Arthur Carry",
+    "birthPlace" : "Amnesty Bay",
+    "picture" : "https://s4.gifyu.com/images/aquaman.jpg",
+    "__v" : 0
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5e3b404742d51540d0f19ed2"),
+    "agroups" : [ 
+        "Justice League"
+    ],
+    "abilities" : [ 
+        "Great strength, agility, endurance, fastness", 
+        "Great strategy mind", 
+        "Splendid combat skills"
+    ],
+    "callname" : "Batman",
+    "realname" : "Bruce Wayne",
+    "birthPlace" : "Gotham City, New Jersey",
+    "picture" : "https://s4.gifyu.com/images/batmana669a6358be39b87.jpg",
+    "__v" : 0
+}
