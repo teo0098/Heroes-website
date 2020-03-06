@@ -10,8 +10,8 @@
   <li>MongoDB (Mongoose used)</li>
   <li>JWT Authorization</li>
   <li>Material UI</li>
-  <li>axios</li>
-  <li>bcypt</li>
+  <li>Axios</li>
+  <li>Bcrypt</li>
 </ul>
 <hr>
 <a href="https://heroes-web.herokuapp.com/" target="_blank">Project's preview</a>
