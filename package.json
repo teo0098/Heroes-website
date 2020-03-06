@@ -28,7 +28,8 @@
   },
   "scripts": {
     "start": "cd ./backend && node server.js",
-    "dev": "react-scripts start",
+    "create": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "env-cmd -f ../dev.env node backend/server.js",
     "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
