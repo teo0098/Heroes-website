@@ -1,8 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "main": "server.js",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
@@ -28,11 +27,12 @@
     "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "server": "env-cmd -f ../dev.env node backend/server.js",
-    "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd ./ && npm install && npm run build"
+    "mongodb": "C:/Users/teodo/mongodb/bin/mongod.exe --dbpath=C:/Users/teodo/mongodb-heroes"
   },
   "eslintConfig": {
     "extends": "react-app"
