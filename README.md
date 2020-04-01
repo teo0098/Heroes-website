@@ -5,7 +5,6 @@
   <li>React</li>
   <li>Redux</li>
   <li>SCSS</li>
-  <li>HTML5</li>
   <li>Node.js</li>
   <li>Express</li>
   <li>MongoDB (Mongoose used)</li>
