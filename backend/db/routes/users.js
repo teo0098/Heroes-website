@@ -26,7 +26,7 @@ router.post('/users/login', async (req, res) => {
         if (!userExists) return res.send({ user: 'NOT EXISTS' });
         const comparePass = await bcrypt.compare(req.body.password, userExists.password);
         if (!comparePass) return res.send({ user: 'NOT EXISTS' });
-        const token = jwt.sign({ username: userExists.username }, process.env.JWT_SECRET_KEY);
+        const token = jwt.sign({ username: userExists.username }, process.env.JWT_SECRET_KEY, { expiresIn: '7d' });
         res.status(200).send({ user: 'LOGGED', username: userExists.username, token });
     } catch(error) {
         res.status(404).send({ user: 'ERROR' });
